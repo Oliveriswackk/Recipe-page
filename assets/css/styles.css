@@ -46,7 +46,7 @@ h2 {
 }
 
 .prep-time h2 {
-    font-family: 'Outfit-bold', sans-serif;
+    font-family: 'Outfit', sans-serif;
     color: #720c72;
     margin-top: 0;
 }
@@ -60,12 +60,17 @@ ul, ol {
     color: #5f5b58;
 }
 
-ul li::marker, ol li::marker {
+.prep-time li::marker, ol li::marker {
+    color: #720c72;
+}
+
+li::marker, ol li::marker {
     color: #854632;
 }
 
 li strong {
-    color: #312e2c;
+    color: #656565;
+    font-family: 'Outfit-bold', sans-serif;
 }
 
 .nutrition table {
@@ -82,6 +87,11 @@ li strong {
     color: #854632;
 }
 
+.nutrition td.name {
+    color: gray;
+}
+
+
 .nutrition td:first-child {
     font-weight: lighter;
 }
@@ -94,7 +104,8 @@ li strong {
 
 @font-face {
     font-family: 'Outfit-bold';
-    src: url('/assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+    font-weight: bold;
+    src: url('/assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
 }
 
 @font-face {
